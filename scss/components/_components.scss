@@ -1,0 +1,45 @@
+@use "../base/variables" as v;
+
+.title {
+  color: v.$black-main;
+  font-size: 6rem;
+  line-height: 7.1875rem;
+  letter-spacing: -0.04em;
+
+  @media (max-width: v.$tablet) {
+    font-size: 5rem;
+  }
+}
+
+.subtitle {
+  color: v.$black-main;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.75rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6.25rem;
+  background-color: v.$black-main;
+  color: v.$white-main;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: v.$white-main;
+      color: v.$black-main;
+      outline: 1px solid v.$black-main;
+    }
+  }
+}

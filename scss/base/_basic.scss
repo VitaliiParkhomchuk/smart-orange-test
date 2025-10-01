@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+body {
+  background-color: v.$white-main;
+  font-family: "Inter Tight";
+  color: v.$black-main;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding-bottom: 12.5rem;
+}
+
+[class*="__container"] {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.75rem;
+
+  @media (max-width: v.$tablet) {
+    padding: 0 2rem;
+  }
+}

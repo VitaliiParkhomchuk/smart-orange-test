@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <section class="hero-section">
+          <div class="hero-section__logo">Logo company</div>
+          <div class="swiper slider">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__slide">
+                <h1 class="title slider__title">Test slider</h1>
+                <div class="slider__decor-element">
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-1"></use>
+                  </svg>
+                  <span></span>
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-2"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="swiper-slide slider__slide"
+                style="background-image: url(./imgs/quality-1.jpg)"
+              >
+                <h1 class="title slider__title">Test slider 1</h1>
+                <div class="slider__decor-element">
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-1"></use>
+                  </svg>
+                  <span></span>
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-2"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="swiper-slide slider__slide"
+                style="background-image: url(./imgs/quality-2.jpg)"
+              >
+                <h1 class="title slider__title">Test slider 2</h1>
+                <div class="slider__decor-element">
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-1"></use>
+                  </svg>
+                  <span></span>
+                  <svg>
+                    <use href="/imgs/sprites.svg#hero-section-decor-el-2"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="slider__button-prev">
+              <svg class="slider__button-arrow">
+                <use href="/imgs/sprites.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="slider__button-next">
+              <svg class="slider__button-arrow">
+                <use href="/imgs/sprites.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio-section">
+          <div class="portfolio-section__container">
+            <h2 class="portfolio-section__title">Збудовані об'єкти</h2>
+            <nav class="portfolio-section__nav">
+              <ul class="nav">
+                <li class="nav__item nav__item--active">Усі</li>
+                <li class="nav__item">Житловий</li>
+                <li class="nav__item">Громадський</li>
+                <li class="nav__item">Спортивний</li>
+              </ul>
+            </nav>
+            <div id="cards-list" class="portfolio-section__list"></div>
+            <div class="portfolio-section__list-more">
+              <button id="class-list-more">
+                <span>Завантажити ще</span>
+                <svg>
+                  <use href="./imgs/sprites.svg#more-button-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__body">
+              <div class="contacts__decor-el">
+                <svg>
+                  <use href="./imgs/sprites.svg#hero-section-decor-el-1"></use>
+                </svg>
+                <span class="contacts__decor-line"></span>
+                <span>Smarto</span>
+              </div>
+              <h2 class="title contacts__title">Контакти</h2>
+              <div class="contacts__list">
+                <div class="contacts__item">
+                  <h3 class="subtitle">Головний офіс:</h3>
+                  <div class="office">
+                    <a
+                      href="mailto:SmartorangeTest@gmail.com"
+                      class="contacts__email"
+                      >SmartorangeTest@gmail.com</a
+                    >
+                    <button class="contacts__map button">
+                      Відкрити на Google maps
+                    </button>
+                  </div>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="subtitle">Наші соцмережі:</h3>
+                  <ul class="social-list">
+                    <li class="social-list__item">
+                      <a href="#">
+                        <svg>
+                          <use href="./imgs/sprites.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="#">
+                        <svg>
+                          <use href="./imgs/sprites.svg#youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="#">
+                        <svg>
+                          <use href="./imgs/sprites.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="#">
+                        <svg>
+                          <use href="./imgs/sprites.svg#tiktok"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="subtitle">Телефони відділів:</h3>
+                  <ul class="phones-list">
+                    <li class="phones-list__item">
+                      <div class="phones-list__icon-wrapper">
+                        <svg class="phones-list__icon">
+                          <use href="./imgs/sprites.svg#phone"></use>
+                        </svg>
+                      </div>
+                      <a href="tel:0444444444" class="phones-list__number"
+                        >(044) 444-44-44</a
+                      >
+                      <div class="phones-list__label">( Юридичний відділ )</div>
+                    </li>
+                    <li class="phones-list__item">
+                      <div class="phones-list__icon-wrapper">
+                        <svg class="phones-list__icon">
+                          <use href="./imgs/sprites.svg#phone"></use>
+                        </svg>
+                      </div>
+                      <a href="tel:0555555555" class="phones-list__number"
+                        >(055) 555-55-55</a
+                      >
+                      <div class="phones-list__label">( Бухгалтерія )</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="subtitle">Email:</h3>
+                  <a href="mailto:office@smarto.ua" class="email">
+                    office@smarto.ua
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="quality">
+              <div class="quality__second-img">
+                <img src="./imgs/quality-2.jpg" alt="office" />
+              </div>
+              <div class="quality__first-img">
+                <img src="./imgs/quality-1.jpg" alt="second office" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/navigation-handler.js"></script>
+    <script src="js/pagination.js"></script>
+  </body>
+</html>
